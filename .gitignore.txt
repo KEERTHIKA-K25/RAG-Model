@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.env
+*.gguf
+*.ckpt
+*.pt
+.cache/
+.vscode/
+.idea/
+*.log
+temp_*.pdf
+chroma_store/
