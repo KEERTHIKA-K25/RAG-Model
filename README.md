@@ -1,4 +1,4 @@
-# 🧠 RAG-Based Maths Chatbot & Question Generator
+# 🧠 RAG-Based Chatbot & Question Generator
 
 This project implements a **Retrieval-Augmented Generation (RAG)** system using local LLMs to:
 
@@ -19,7 +19,7 @@ Built with **FastAPI**, **LangChain**, **ChromaDB**, and **Mistral-7B**, this sy
 
 The question generation module is functional but still under improvement. It successfully generates questions from the uploaded syllabus content, but sometimes the exact number of questions per mark category (e.g., 2-mark, 5-mark) may vary slightly from the requested count.
 
-This is due to the limitations of prompt control in local LLMs (like Mistral-7B) and token-length constraints. Efforts have been made to refine the prompts and model parameters, and further improvements can be made with more time and better hardware.
+This is due to the limitations of prompt control in local LLMs (like Mistral-7B). Efforts have been made to refine the prompts and model parameters, and further improvements can be made with more time and better hardware.
 
 
 ## 📂 Project Structure
@@ -30,8 +30,7 @@ rag-maths-chatbot/
 ├── main.py                 # FastAPI backend (API endpoints)
 ├── ingest.py               # Script to load and store syllabus PDFs
 ├── models/                 # Store downloaded mistral .gguf models here
-├── chroma_store/           # Local vector DB (auto-created)
-├── requirements.txt        # Python dependencies
+├── chroma_store/           # Local vector DB (auto-created)   
 ├── README.md
 └── ...
 
